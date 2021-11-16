@@ -1,17 +1,32 @@
 header {
   height: 400px;
+  width: 100%;
   background-color: #66ccff;
   color: #9b4106;
   background-image: url("https://www.transparenttextures.com/patterns/norwegian-rose.png");
-}
-
-.avatar {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.name {
+div.avatar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.name {
+  height: auto;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+}
+
+#yourname {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.nav {
+  height: 100px;
 }
