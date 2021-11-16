@@ -1,0 +1,28 @@
+nav {
+  /* position: fixed; */
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.double-down-angle {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+.write-a-new-tweet {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5em;
+}
+
+.app-name {
+  display: flex;
+  align-items: center;
+}
