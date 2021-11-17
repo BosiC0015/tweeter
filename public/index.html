@@ -16,10 +16,17 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script 
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/composer-char-counter.js"></script>
+    <script src="scripts/tweet-article.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -40,22 +47,24 @@
         </div>
       </div>
     </nav>
-    <header>
+    <header id="avatar-name">
+      <div class="nav">
+      </div>
       <div class="avatar">
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div class="name">
-          <h2>Your Name</h2>
+          <h2 id="yourname">Who am I?</h2>
       </div>
-  </header>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <!-- <h2>Compose Tweet</h2> -->
         <form action="/tweets/" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
+          <label for="tweet-text"><b>What are you humming about?</b></label>
           <textarea name="text" id="tweet-text"></textarea>
           <div class="submit-counter">
             <button type="submit">Tweet</button>
@@ -63,6 +72,28 @@
           </div>
         </form>
       </section>
+      <article>
+        <header class="article-header">
+          <div class="article-avatar-name">
+            <div class="article-avatar">
+              <img src="images/profile-hex.png" height="70px" width="auto">
+            </div>
+            <div class="article-name">Mirai</div>
+          </div>
+          <div class="id">@kasugamirai</div>
+        </header>
+        <div >
+          <span id="tweeet-content">Kasuga Mirai!</span>
+        </div>
+        <footer class="article-footer">
+          <div>10 days ago</div>
+          <div>
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
     </main>
   </body>
 </html>

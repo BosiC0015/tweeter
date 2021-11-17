@@ -1,6 +1,8 @@
 .new-tweet {
   width: 100%;
   text-align: left;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 textarea {
@@ -12,19 +14,25 @@ textarea {
   border-bottom-width: 3px;
 }
 
-.submit-counter {
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  justify-content: space-between;
-}
-
 button {
   background-color: #4056a1;
   color: #FFFFFF;
   font-family: "Bungee";
 }
 
-output {
+.counter {
   font-family: "Bungee";
+  color: #545149;
+}
+
+.overcount {
+  font-family: "Bungee";
+  color: #FF0000;
+}
+
+.submit-counter {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-between;
 }
