@@ -5,7 +5,7 @@
  */
 
 const createTweetElement = function(tweetObj) {
-  $('.container').append(
+  $('#tweet-container').prepend(
   `<article class="tweet">
   <header class="article-header">
     <div class="article-avatar-name">
@@ -31,7 +31,7 @@ const createTweetElement = function(tweetObj) {
 }
 
 // get tweet data from '/tweets' and append to the .container by passing it to createTweetElement()
-const renderTweets = function() {
+const loadTweets = function() {
   $.get('/tweets').then(data => {
     // console.log(data)
     for (const tweetData of data) {
@@ -40,6 +40,39 @@ const renderTweets = function() {
   })
 }
 
+// const displayErrCall = function() {
+//   $(".errmsg").text(``)
+// }
+
 $(() => {
-  renderTweets();
+  $(".err-msg").hide();
+  loadTweets();
+  // add event listener
+  $('#newtweet').on('submit', function(evnt) {
+    evnt.preventDefault();
+    
+    // serialize evnt.target.text.value and send to server
+    const serializedTxt = $('#tweet-text').serialize();
+    
+    // validation
+    if (evnt.target.text.value.length === 0) {
+      $(".err-msg").show().text('Empty tweet cannot be posted!');
+      return false;
+    } 
+    if (evnt.target.text.value.length > 140) {
+      $(".err-msg").show().text('Your tweet is too long!! Try a shorter one!');
+      return false;
+    }
+
+    $.post('/tweets/', serializedTxt).then(function() {
+      // console.log(evnt.target.text.value.length)
+      
+      // refetch the new tweet after each post
+      $.get('/tweets').then(data => {
+        const last = data.length - 1;
+        createTweetElement(data[last]);
+      })
+      $("textarea").empty();
+    })
+  })
 });
