@@ -1,12 +1,16 @@
-.new-tweet {
+div.newtweet {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#new-tweet {
   width: 100%;
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 50px;
 }
 
 textarea {
   width: 100%;
+  margin-top: 10px;
   background-color: #f4f1ec;
   border-style: none;
   border-bottom-style: solid;
@@ -35,4 +39,15 @@ button {
   flex-direction: row;
   /* align-items: center; */
   justify-content: space-between;
+}
+
+div.err-msg {
+  border-style: double;
+  border-color: orange;
+  color: rgb(170, 2, 2);
+  background-color: #f7eeeb;
+  padding: 2%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
 }

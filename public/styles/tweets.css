@@ -9,7 +9,8 @@ article.tweet {
 }
 
 article:hover {
-  background-color: lavenderblush;
+  background-color: moccasin;
+  box-shadow: #b1b1b1;
 }
 
 .article-header {
@@ -71,13 +72,13 @@ div.handle {
 }
 
 i.fas.fa-flag:hover {
-  color: cornflowerblue;
+  color:plum;
 }
 
 i.fas.fa-retweet:hover {
-  color: cornflowerblue;
+  color: plum;
 }
 
 i.fas.fa-heart:hover {
-  color: cornflowerblue;
+  color: plum;
 }
