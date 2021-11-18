@@ -1,0 +1,83 @@
+article.tweet {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: #545149;
+  border-width: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+article:hover {
+  background-color: lavenderblush;
+}
+
+.article-header {
+  margin-top: 7px;
+  margin-bottom: 10px;
+  height: 80px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-footer {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-top-style: solid;
+  border-top-color: #545149;
+  border-top-width: 3px;
+  font-size: medium;
+}
+
+.tweet-content {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+}
+
+div.article-avatar {
+  margin-right: 7px;
+}
+
+div.article-avatar-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+div.article-name {
+  margin-left: 7px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+div.handle {
+  color: #b1b1b1;
+  display: flex;
+  align-items: center;
+}
+
+i.fas.fa-flag:hover {
+  color: cornflowerblue;
+}
+
+i.fas.fa-retweet:hover {
+  color: cornflowerblue;
+}
+
+i.fas.fa-heart:hover {
+  color: cornflowerblue;
+}
