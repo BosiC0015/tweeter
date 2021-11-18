@@ -32,21 +32,20 @@ const createTweetElement = function(tweetObj) {
 
 // get tweet data from '/tweets' and append to the .container by passing it to createTweetElement()
 const loadTweets = function() {
+  // get tweets data from server
   $.get('/tweets').then(data => {
     // console.log(data)
+    // loop through them and pass to createTweetElement()
     for (const tweetData of data) {
       createTweetElement(tweetData);
     }
   })
 }
 
-// const displayErrCall = function() {
-//   $(".errmsg").text(``)
-// }
-
 $(() => {
   $(".err-msg").hide();
   loadTweets();
+
   // add event listener
   $('#newtweet').on('submit', function(evnt) {
     evnt.preventDefault();
@@ -54,7 +53,8 @@ $(() => {
     // serialize evnt.target.text.value and send to server
     const serializedTxt = $('#tweet-text').serialize();
     
-    // validation
+    // validation (empty or too long twwets cannot be posted)
+    // show error message with jQuery
     if (evnt.target.text.value.length === 0) {
       $(".err-msg").show().text('Empty tweet cannot be posted!');
       return false;
@@ -72,7 +72,13 @@ $(() => {
         const last = data.length - 1;
         createTweetElement(data[last]);
       })
-      $("textarea").empty();
+      
+      // // refech all the tweets after submission
+      // $("#tweet-container").empty();
+      // loadTweets();
+
+      // clear the input box
+      evnt.target.text.value = '';
     })
   })
 });
