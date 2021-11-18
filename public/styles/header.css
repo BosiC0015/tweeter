@@ -1,7 +1,7 @@
-header {
+#avatar-name {
   height: 400px;
   width: 100%;
-  background-color: #66ccff;
+  background-color: #9effdf;
   color: #9b4106;
   background-image: url("https://www.transparenttextures.com/patterns/norwegian-rose.png");
   display: flex;

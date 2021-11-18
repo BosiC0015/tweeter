@@ -17,10 +17,10 @@ nav {
   color: red;
 }
 
-.write-a-new-tweet {
+.nav-right {
   display: flex;
-  align-items: center;
-  padding-top: 1.5em;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .app-name {
