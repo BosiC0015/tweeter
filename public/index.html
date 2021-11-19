@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -53,35 +54,35 @@
         </div>
       </div>
     </nav>
-    <header id="avatar-name">
-      <div class="nav">
-      </div>
-      <div class="avatar">
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div class="name">
-          <h2 id="yourname">Who am I?</h2>
-      </div>
-    </header>
+    <div id="header-main">
+      <header id="avatar-name">
+        <div class="nav">
+        </div>
+        <div class="avatar">
+            <img src="/images/profile-hex.png" width="256" height="256"> 
+        </div>
+        <br>
+        <div class="name">
+            <h2 id="yourname">Who am I?</h2>
+        </div>
+      </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <div class="newtweet">
-        <section class="new-tweet">
-          <!-- <h2>Compose Tweet</h2> -->
-          <form id="newtweet"><!-- action="/tweets/" method="POST" -->
-            <div class="err-msg">err msg</div>
-            <!-- <label for="tweet-text"><b>What are you humming about?</b></label> -->
-            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-            <div class="submit-counter">
-              <button type="submit">Tweet</button>
-              <output name="counter" class="counter" for="tweet-text">140</output>
-            </div>
-          </form>
-        </section>
-      </div>
-      <div id="tweet-container"></div>
-    </main>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <div class="newtweet">
+          <section class="new-tweet">
+            <form id="newtweet">
+              <div class="err-msg">err msg</div>
+              <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+              <div class="submit-counter">
+                <button type="submit">Tweet</button>
+                <output name="counter" class="counter" for="tweet-text">140</output>
+              </div>
+            </form>
+          </section>
+        </div>
+        <div id="tweet-container"></div>
+      </main>
+    </div>
   </body>
 </html>
