@@ -9,8 +9,8 @@ article.tweet {
 }
 
 article:hover {
-  background-color: moccasin;
-  box-shadow: #b1b1b1;
+  background-color: #f7f0e6;
+  box-shadow: 5px 5px 5px #b1b1b1;
 }
 
 .article-header {
@@ -32,6 +32,7 @@ article:hover {
   margin-right: 2.5%;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-top: 5px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -43,6 +44,7 @@ article:hover {
 
 .tweet-content {
   width: 95%;
+  padding-bottom: 10px;
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: flex;
@@ -72,13 +74,13 @@ div.handle {
 }
 
 i.fas.fa-flag:hover {
-  color:plum;
+  color: #b899e0;
 }
 
 i.fas.fa-retweet:hover {
-  color: plum;
+  color: #9cda73;
 }
 
 i.fas.fa-heart:hover {
-  color: plum;
+  color: #f192bf;
 }

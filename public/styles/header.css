@@ -1,6 +1,7 @@
 #avatar-name {
   height: 400px;
   width: 100%;
+  margin-top: 100px;
   background-color: #9effdf;
   color: #9b4106;
   background-image: url("https://www.transparenttextures.com/patterns/norwegian-rose.png");
@@ -24,9 +25,21 @@ div.name {
 
 #yourname {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10%;
 }
 
 div.nav {
   height: 100px;
+}
+
+/* for desktop */
+@media only screen and (min-width: 1024px) {
+
+  #avatar-name {
+    width: 50%;
+    margin-top: 180px;
+    margin-left: 3%;
+    display: flex;
+  }
+
 }

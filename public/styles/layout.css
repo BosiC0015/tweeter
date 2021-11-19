@@ -35,3 +35,23 @@ main {
   flex-direction: column;
   justify-content: space-around;
 }
+
+/* for desktop */
+@media only screen and (min-width: 1024px) {
+  
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #header-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main {
+    margin-top: 150px;
+    display: flex;
+  }
+}
