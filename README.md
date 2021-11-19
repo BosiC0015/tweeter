@@ -1,18 +1,42 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone, having the function of sending a tweet and fetch and display tweets from the server data.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+## Final Product
 
-## Getting Started
+1. The Tweeter can adapt its own layout to the size of browser, and can thus run on both desktop and smartphone.
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+!["desktop-size"](https://github.com/BosiC0015/tweeter/blob/master/public/images/desktop-size.png)
+
+!["phone-size"](https://github.com/BosiC0015/tweeter/blob/master/public/images/phone-size.png)
+
+
+2. A new tweet can be sent by typing a text shorter than 140 characters in the text area and clicking the "TWEET" button lower left. The number lower right is a counter which tells you how many characters are still allowed in the text area. It will turn red and minus when input is over 140.
+
+!["input"](https://github.com/BosiC0015/tweeter/blob/master/public/images/input.png)
+
+!["sent-new-tweet"](https://github.com/BosiC0015/tweeter/blob/master/public/images/sent-new-tweet.png)
+
+!["input-over-140"](https://github.com/BosiC0015/tweeter/blob/master/public/images/input-over-140.png)
+
+
+3. When trying to submit an empty tweet or tweet with more than 140 characters, an error message will show up.
+
+!["empty-error"](https://github.com/BosiC0015/tweeter/blob/master/public/images/empty-error.png)
+
+!["too-long-error"](https://github.com/BosiC0015/tweeter/blob/master/public/images/too-long-error.png)
 
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
+- Body-parser
+- Chance
+- Md5
+- Timeago.js
+
+## Getting Started
+
+- Install all dependencies (using the `npm install` command).
+- Run the development web server using the `npm run local` command.
+- Go to <http://localhost:8080/> in the browser.
