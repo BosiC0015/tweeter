@@ -11,7 +11,8 @@ Tweeter is a simple, single-page Twitter clone, having the function of sending a
 !["phone-size"](https://github.com/BosiC0015/tweeter/blob/master/public/images/phone-size.png)
 
 
-2. A new tweet can be sent by typing a text shorter than 140 characters in the text area and clicking the "TWEET" button lower left. The number lower right is a counter which tells you how many characters are still allowed in the text area. It will turn red and minus when input is over 140.
+2. A new tweet can be sent by typing a text shorter than 140 characters in the text area and clicking the "TWEET" button lower left. 
+The number lower right is a counter which tells you how many characters are still allowed in the text area. It will turn red and minus when input is over 140.
 
 !["input"](https://github.com/BosiC0015/tweeter/blob/master/public/images/input.png)
 
