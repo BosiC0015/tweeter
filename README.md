@@ -10,22 +10,24 @@ Tweeter is a simple, single-page Twitter clone, having the function of sending a
 
 !["phone-size"](https://github.com/BosiC0015/tweeter/blob/master/public/images/phone-size.png)
 
+2. When hover over the tweet article, the box will show a darker color and a shadow. When hover over the icons lower right, they will change color.
 
-2. A new tweet can be sent by typing a text shorter than 140 characters in the text area and clicking the "TWEET" button lower left. 
-The number lower right is a counter which tells you how many characters are still allowed in the text area. It will turn red and minus when input is over 140.
+!["hover"](https://github.com/BosiC0015/tweeter/blob/master/public/videos/hover.mp4)
 
-!["input"](https://github.com/BosiC0015/tweeter/blob/master/public/images/input.png)
+3. A new tweet can be sent by typing a text shorter than 140 characters in the text area and clicking the "TWEET" button lower left. The number lower right is a counter which tells you how many characters are still allowed in the text area. 
 
-!["sent-new-tweet"](https://github.com/BosiC0015/tweeter/blob/master/public/images/sent-new-tweet.png)
+!["new tweet"](https://github.com/BosiC0015/tweeter/blob/master/public/videos/new-post.mp4)
+
+It will turn red and minus when input is over 140.
 
 !["input-over-140"](https://github.com/BosiC0015/tweeter/blob/master/public/images/input-over-140.png)
 
 
-3. When trying to submit an empty tweet or tweet with more than 140 characters, an error message will show up.
+4. When trying to submit an empty tweet or tweet with more than 140 characters, an error message will show up.
 
-!["empty-error"](https://github.com/BosiC0015/tweeter/blob/master/public/images/empty-error.png)
+!["empty-error"](https://github.com/BosiC0015/tweeter/blob/master/public/videos/empty-error.mp4)
 
-!["too-long-error"](https://github.com/BosiC0015/tweeter/blob/master/public/images/too-long-error.png)
+!["too-long-error"](https://github.com/BosiC0015/tweeter/blob/master/public/videos/too-long-error.mp4)
 
 ## Dependencies
 
